@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- script -->
+    <script src="assets/js/script.js" defer></script>
+    <title>To do list</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <h1 class="header gradient-text">To Do List</h1>
+      <section class="container-md">
+        <div class="content">
+          <h2
+            contenteditable="true"
+            spellcheck="true"
+            aria-multiline="true"
+            id="todo-title"
+          >
+            Título
+          </h2>
+          <ul class="list-group" id="todo-list" droppable="true"></ul>
+          <button type="button" id="btn-add-task" class="btn btn-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-plus-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+              />
+            </svg>
+            Adicionar tarefa
+            <span
+              ><kbd class="badge">ctrl</kbd><kbd class="badge">Enter</kbd></span
+            >
+          </button>
+        </div>
+        <div class="content">
+          <button type="button" id="btn-completed-task" class="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-compact-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"
+              />
+            </svg>
+            <span id="count-completed-tasks"></span>
+            <span id="completed-task-text"></span>
+          </button>
+
+          <ul class="list-group" id="completed-task"></ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
